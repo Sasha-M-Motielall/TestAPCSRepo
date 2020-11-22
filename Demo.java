@@ -7,4 +7,22 @@ public class Demo{
       System.out.println();
     }
   }
+
+  public static String arrToString(int[] arr) {
+      String convert = "";
+      for (int i=0; i<arr.length;i++) {
+        String a = "";
+        a = + arr[i] + "";
+        if (i != arr.length-1) {
+          convert += a;
+          convert += ", ";
+        }
+        else {
+          convert += a;
+        }
+      }
+      convert = "{" + convert + "}";
+      return (convert);
+    }
+
 }
